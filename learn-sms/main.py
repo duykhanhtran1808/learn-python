@@ -1,7 +1,7 @@
 import requests
 from twilio.rest import Client
 
-api_key = "1f2804e4ab46971df8d760b3d0b86e6d"
+api_key = "" #removed
 
 my_lat = 21.007456
 my_long = 105.841464
@@ -14,8 +14,8 @@ weather_params = {
     "exclude": "current, minutely, daily"
 }
 # SMS
-account_sid = 'AC237b755e089b4d0ee18c31d02fe4b8c2'
-auth_token = '31d226ffc5e47a524029c94dd77dedf4'
+account_sid = '' #removed
+auth_token = '' #removed
 
 
 
@@ -40,7 +40,7 @@ if will_rain:
     message = client.messages \
         .create(
         body="It's going to rain. From Duy Khanh",
-        from_='+19897488877',
+        from_='',#removed
         to=''
     )
     print(message.status)
